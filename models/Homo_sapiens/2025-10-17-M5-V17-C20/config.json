@@ -1,0 +1,54 @@
+{
+  "modalities": [
+    "DNA",
+    "RNA",
+    "protein",
+    "text",
+    "singlecell"
+  ],
+  "data_dir": "data/dataloader/Homo_sapiens-M5-ModalityClusters-V17-C20",
+  "model_dir": "models/Homo_sapiens/2025-10-17-M5-V17-C20",
+  "adapter_type": "mlp",
+  "encoder_type": "transformer",
+  "fusion_type": "residual",
+  "decoder_type": "transformer",
+  "dropout_rate": 0.3,
+  "encoder_layers": 2,
+  "fuser_layers": 4,
+  "decoder_layers": 2,
+  "input_dims": {
+    "DNA": 4096,
+    "RNA": 2560,
+    "protein": 1152,
+    "text": 1024,
+    "singlecell": 512
+  },
+  "n_clusters_per_modality": {
+    "DNA": 20,
+    "RNA": 20,
+    "protein": 20,
+    "text": 20,
+    "singlecell": 20
+  },
+  "temperature": 0.07,
+  "lambda_contrast": 0.1,
+  "lambda_rec": 0.1,
+  "lambda_cls": 2.0,
+  "batch_size": 512,
+  "lr": 0.0001,
+  "weight_decay": 1e-06,
+  "num_epochs": 80,
+  "warmup_steps": 500,
+  "stable_steps": 3000,
+  "min_lr": 1e-06,
+  "early_stop_patience": 5,
+  "log_interval": 103,
+  "feature_mask_ratio": 0.05,
+  "modality_mask_strategy": {
+    "no_mask": 0.6,
+    "mask_1": 0.1,
+    "mask_2": 0.1,
+    "mask_3": 0.1,
+    "mask_4": 0.1
+  }
+}
