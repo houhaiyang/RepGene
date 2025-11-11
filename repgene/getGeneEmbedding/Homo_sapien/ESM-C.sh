@@ -1,12 +1,12 @@
 #!/bin/bash
 #DSUB -n ESM-C
 #DSUB -N 1
-#DSUB -A root.project.P24Z28400N0259_tmp2
+#DSUB -A root.project.xxxxxx
 #DSUB -q root.default
 #DSUB -R "cpu=8;gpu=1;mem=24000"
-#DSUB -pn "cyclone001-agent-155"
-#DSUB -oo /home/share/huadjyin/home/houhaiyang/project/RepGene/logs/%J.out
-#DSUB -eo /home/share/huadjyin/home/houhaiyang/project/RepGene/logs/%J.err
+#DSUB -pn "xxxxxx"
+#DSUB -oo /xxxxxx/logs/%J.out
+#DSUB -eo /xxxxxx/logs/%J.err
 
 
 # 加载系统 Conda
