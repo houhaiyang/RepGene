@@ -20,14 +20,12 @@ This project is based on Python 3.11 and developed using PyCharm on Windows 11.
 
 - Desktop: Windows 11, NVIDIA GeForce RTX 4070 Super 12GB, PyCharm 2024, Python 3.11, PyTorch 2.1.0, CUDA 12.1, [2025]
 
-
-
 ## Installation
 Requirements: python=3.11, pytorch=2.1.0, NVIDIA GPU
 
 Refer to requirements.txt
 
-## Get models
+## Get full data-sets & models
 Please get the complete models and test dataset from the following link.
 
 ```text
@@ -35,6 +33,7 @@ https://pan.xunlei.com/s/VOdljNrt_gITGdvjbMBi3PLkA1?pwd=i9yx#
 ```
 
 ## Use examples
+
 
 
 
