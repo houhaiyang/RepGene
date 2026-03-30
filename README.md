@@ -33,7 +33,7 @@ Refer to requirements.txt
 Please get the complete models and test dataset from the following link.
 
 ```text
-https://pan.xunlei.com/s/VOdljNrt_gITGdvjbMBi3PLkA1?pwd=i9yx#
+https://pan.xunlei.com/s/xxx
 ```
 
 
