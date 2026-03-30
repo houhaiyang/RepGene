@@ -4,7 +4,7 @@
 
 #### You Only Need One Gene Representation
 
-- Author: Haiyang HOU
+- Author: XXX
 - Date: 2025-11-11
 - Version: v0.17.0
 
