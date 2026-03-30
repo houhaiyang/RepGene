@@ -18,10 +18,8 @@
 
 This project is based on Python 3.11 and developed using PyCharm on Windows 11.
 
-1 computer for development and testing:
-
 - Desktop: Windows 11, NVIDIA GeForce RTX 4070 Super 12GB, PyCharm 2024, Python 3.11, PyTorch 2.1.0, CUDA 12.1, [2025]
-
+- The original embedding and downstream evaluation are performed using A100.
 
 ## Installation
 Requirements: python=3.11, pytorch=2.1.0, NVIDIA GPU
