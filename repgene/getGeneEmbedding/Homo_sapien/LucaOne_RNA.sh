@@ -1,27 +1,27 @@
 #!/bin/bash
 #DSUB -n lucaOne
 #DSUB -N 1
-#DSUB -A root.project.P24Z28400N0259_tmp2
+#DSUB -A root.project.xxx
 #DSUB -q root.default
 #DSUB -R "cpu=8;gpu=1;mem=24000"
 #DSUB -pn "cyclone001-agent-155"
-#DSUB -oo /home/share/huadjyin/home/houhaiyang/project/RepGene/logs/%J.out
-#DSUB -eo /home/share/huadjyin/home/houhaiyang/project/RepGene/logs/%J.err
+#DSUB -oo /home/share/xxx/home/xxx/project/RepGene/logs/%J.out
+#DSUB -eo /home/share/xxx/home/xxx/project/RepGene/logs/%J.err
 
 
 # 加载系统 Conda
 source /home/HPCBase/tools/anaconda3/etc/profile.d/conda.sh
 # 加载环境配置
-source /home/share/huadjyin/home/houhaiyang/bashrc/lucaOne.bashrc
+source /home/share/xxx/home/xxx/bashrc/lucaOne.bashrc
 
 # getEmbeddings
-cd /home/share/huadjyin/home/houhaiyang/method/lucaOne/LucaOneApp
+cd /home/share/xxx/home/xxx/method/lucaOne/LucaOneApp
 export CUDA_VISIBLE_DEVICES="0,1,2,3"
 
-data_dir='/home/share/huadjyin/home/houhaiyang/project/RepGene/data/species/Homo_sapiens'
+data_dir='/home/share/xxx/home/xxx/project/RepGene/data/species/Homo_sapiens'
 
 python algorithms/inference_embedding_lucaone.py \
-    --llm_dir /home/share/huadjyin/home/houhaiyang/method/lucaOne/models \
+    --llm_dir /home/share/xxx/home/xxx/method/lucaOne/models \
     --llm_type lucaone \
     --llm_version lucaone \
     --llm_step 36000000 \
@@ -43,6 +43,6 @@ python algorithms/inference_embedding_lucaone.py \
 
 # mergeEmbeddings
 cd ${data_dir}
-python /home/share/huadjyin/home/houhaiyang/method/lucaOne/LucaOneApp/mergeEmbeddings.py \
+python /home/share/xxx/home/xxx/method/lucaOne/LucaOneApp/mergeEmbeddings.py \
     --input_dir ./embeddings/LucaOne_RNA \
     --output_file ./embeddings/LucaOne_RNA_merged_embeddings.csv.gz
