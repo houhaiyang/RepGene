@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time : 2025-10-17 16:17
-# @Author : Haiyang HOU
+# @Author : xxx
 
 import torch
 import torch.nn as nn
